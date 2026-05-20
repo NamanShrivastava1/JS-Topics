@@ -1,3 +1,5 @@
+// Only call api after a certain time period.
+
 function debounce(fn, delay) {
   let timerId;
 
