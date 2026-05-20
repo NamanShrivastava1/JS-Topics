@@ -6,6 +6,7 @@ function debounce(fn, delay) {
   return function (...args) {
     clearTimeout(timerId); // cancel the last call
     timerId = setTimeout(() => {
+      // Run this function after delay(1s, 2s ...)
       fn(...args);
     }, delay);
   };
