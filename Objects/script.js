@@ -53,4 +53,3 @@ Object.defineProperty(obj, 'status', {
 obj.status = 'inactive'; // Does not change due to `writable: false`
 console.log(obj.status);
 console.log(obj)
-
