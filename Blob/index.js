@@ -1,3 +1,5 @@
+// Blob is used to represent immutable raw data, such as files or binary data. It can be used in web applications to handle file uploads, downloads, and other binary data operations.
+
 // 1. Create a Blob from text
 const textBlob = new Blob(["Hello, world!"], { type: "text/plain" });
 
@@ -7,7 +9,7 @@ console.log(text); // Outputs: "Hello, world!"
 
 // 3. Create a temporary URL to preview or download the Blob
 const blobUrl = URL.createObjectURL(textBlob);
-console.log("Blob URL:", blobUrl)
+console.log("Blob URL:", blobUrl);
 
 // Always release the URL from memory when done to prevent memory leaks
 URL.revokeObjectURL(blobUrl);
